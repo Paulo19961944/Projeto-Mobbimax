@@ -48,9 +48,13 @@
 
 /*DESKTOPS*/
 @media (min-width: 1024px){
-    /*CABEÇALHO*/
     header{
-        padding: 48px 15%; /*Espaçamento de 48px na Vertical e de 15% nas laterais*/
+        height: 120px;
+    }
+    /*CABEÇALHO*/
+    .header-container{
+        padding: 32px;
+        max-width: 1200px;
     }
 
     /*LOGOTIPO*/

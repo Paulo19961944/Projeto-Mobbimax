@@ -68,6 +68,9 @@ span{
 
 /*CABEÇALHO DA PÁGINA*/
 header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
     background-color: #F5F0F6; /*Cor de Fundo - Branca*/
     width: 100%; /*Largura de 100%*/
@@ -75,9 +78,13 @@ header{
     top: 0; /*Alinha no Topo*/
     border-bottom: 2px solid #00215e; /*Borda Inferior de 2px Azul*/
     padding: 32px; /*Espaçamento em todos os lados de 32px*/
-    justify-content: space-between; /*Espaçamento entre eles*/
-    align-items: center;
-    display: flex; /*Flexbox*/
+}
+
+.header-container{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*LOGOTIPO DA MOBBIMAX*/
