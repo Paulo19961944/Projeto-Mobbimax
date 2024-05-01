@@ -214,7 +214,7 @@ main section ul li:last-child{
 /*TODOS OS CARDS*/
 .cards{
     width: 300px; /*Largura de 300px*/
-    height: 360px; /*Altura de 360px*/
+    height: 420px; /*Altura de 360px*/
     margin-bottom: 32px; /*Margem Inferior de 32px*/
     border-radius: 8px; /*Arredonda a Borda*/
     box-shadow: 0.3px 0.3px 4px #13120065; /*Sombra do Card*/
@@ -248,9 +248,8 @@ main section ul li:last-child{
     background-color: #00215e; /*Cor de Fundo - Azul*/
     color: #F5F0F6; /*Cor do Texto - Branca*/
     font-size: 1em; /*Tamanho da Fonte de 75%*/
-    width: 114px; /*Largura de 114px*/
-    height: 32px; /*Altura de 32px*/
-    margin-bottom: 48px;
+    width: 114px;
+    height: 32px;
 }
 
 /*ARTIGO LOJA*/
