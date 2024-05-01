@@ -213,7 +213,8 @@ main section ul li:last-child{
 
 /*TODOS OS CARDS*/
 .cards{
-    padding: 0 24px;
+    width: 300px; /*Largura de 300px*/
+    height: 360px; /*Altura de 360px*/
     margin-bottom: 32px; /*Margem Inferior de 32px*/
     border-radius: 8px; /*Arredonda a Borda*/
     box-shadow: 0.3px 0.3px 4px #13120065; /*Sombra do Card*/
@@ -225,9 +226,8 @@ main section ul li:last-child{
 
 /*TÍTULOS DOS CARDS*/
 .cards h2{
-    width: 100%; /*Largura de 110%*/
     font-family: 'Roboto Flex', sans-serif; /*Fonte do Google - Roboto Flex*/
-    font-size: 1.28em; /*Tamanho da Fonte de 128%*/
+    font-size: 1.62em; /*Tamanho da Fonte de 128%*/
     margin: 48px 0 0 0; /*Zera a Margem*/
 }
 
@@ -247,9 +247,9 @@ main section ul li:last-child{
     border: none; /*Tira a Borda*/
     background-color: #00215e; /*Cor de Fundo - Azul*/
     color: #F5F0F6; /*Cor do Texto - Branca*/
-    font-size: 0.75em; /*Tamanho da Fonte de 75%*/
-    width: 96px; /*Largura de 96px*/
-    height: 24px; /*Altura de 24px*/
+    font-size: 1em; /*Tamanho da Fonte de 75%*/
+    width: 114px; /*Largura de 114px*/
+    height: 32px; /*Altura de 32px*/
     margin-bottom: 48px;
 }
 
