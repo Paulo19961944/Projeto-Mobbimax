@@ -13,6 +13,7 @@ html, body{
 
 /*CONTEÚDO DA PÁGINA*/
 body{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -283,6 +284,9 @@ main section ul li:last-child{
 
 /*RODAPÉ*/
 footer{
+    background-color: #F5F0F6;
+    position: absolute;
+    bottom: -96px;
     height: 96px; /*Altura de 96px*/
     display: flex; /*Flexbox*/
     justify-content: center; /*Alinha o Eixo Principal ao Centro*/
