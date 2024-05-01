@@ -1,0 +1,229 @@
+/*CELULAR*/
+@media (min-width: 480px){
+    /*CABEÇALHO*/
+    header{
+        padding: 32px 64px; /*Preenchimento de 32px na Vertical e de 64px nas laterais*/
+    }
+
+    /*CONTAINER PRINCIPAL*/
+    .container{
+        padding: 48px 96px; /*Preenchimento de 48px na vertical e de 96px nas laterais*/
+    }
+
+    /*CARDS*/
+    .cards{
+        max-width: 348px; /*Largura Máxima de 348px*/
+    }
+}
+
+/*TABLETS*/
+@media (min-width: 768px) {
+    /*TÍTULOS*/
+    h1, h2, h3{
+        font-size: 2em; /*Tamanho da Fonte de 200%*/
+    }
+
+    /*OUTROS ELEMENTOS DE TEXTO*/
+    p, a, span, .cards button{
+        font-size: 1em; /*Tamanho da fonte de 100%*/
+    }   
+
+    /*TÍTULO DOS CARDS*/
+    .cards h2{
+        font-size: 1.5em; /*Tamanho da Fonte de 150%*/
+    }
+
+    /*BOTÕES DOS CARDS*/
+    .cards button{
+        width: 120px; /*Largura de 120px*/
+        height: 32px; /*Altura de 32px*/
+    }
+}
+
+/*DESKTOPS*/
+@media (min-width: 1024px){
+    /*CABEÇALHO*/
+    header{
+        padding: 48px 15%; /*Espaçamento de 48px na Vertical e de 15% nas laterais*/
+    }
+
+    /*LOGOTIPO*/
+    #logo{
+        width: 120px; /*Largura de 120px*/
+        height: 36.75px; /*Altura de 36.75px*/
+    }
+
+    /*BOTÕES DO MENU MOBILE*/
+    #abrirMenuMobile, #fecharMenuMobile{
+        display: none; /*Esconde o Elemento*/
+    }   
+
+    /*MENU*/
+    #menu{
+        display: flex; /*Flexbox*/
+    }
+
+    /*LINKS DO MENU DE NAVEGAÇÃO*/
+    #menu li a{
+        padding: 0; /*Zera o Preenchimento*/
+        margin-left: 24px; /*Margem a Esquerda de 24px*/
+        color: #131200; /*Cor do Texto Preta*/
+    }
+
+    /*LINKS DO MENU DE NAVEGAÇÃO AO PASSAR O MOUSE*/
+    #menu li a:hover{
+        cursor: pointer; /*Mãozinha ao Passar o Mouse*/
+        color: #00215e; /*Cor do Texto Azul*/
+        font-weight: bold; /*Fonte em Negrito*/
+        transform: scale(1.03); /*Aumento o Tamanho em 3%*/
+    }
+
+    /*CONTAINER PRINCIPAL*/
+    .container{
+        margin: 96px 0; /*Margem Vertical de 96px e de 0px nas laterais*/
+        width: 100%; /*Largura de 100%*/
+    }
+
+    /*IMAGENS DA SEÇÃO DO CONTEÚDO PRINCIPAL*/
+    main section img{
+        width: 420px; /*Largura de 420px*/
+    }
+
+    /*CONTEÚDO DO CONTAINER PRINCIPAL*/
+    .container-content{
+        display: flex; /*Flexbox*/
+        gap: 48px; /*Espaçamento de 48px*/
+    }
+
+    /*CARDS*/
+    .cards{
+        padding: 40px 64px; /*Preenchimento de 40px na Vertical e de 64px nas laterais*/
+        height: 375px; /*Altura Fixa de 375px*/
+    }
+
+    /*CARDS AO PASSAR O MOUSE*/
+    .cards:hover{
+        cursor: pointer; /*Mãozinha ao passar o mouse*/
+        transform: scale(1.01); /*Aumenta os Cards em 1%*/
+        transition: 0.4s ease-in-out; /*Transição Suave ao passar o mouse*/
+    }
+
+    /*CONTAINER DOS CARDS*/
+    .cards-container{
+        margin: 0; /*Zera a Margem*/
+        padding: 0; /*Zera o Preenchimento*/
+        display: flex; /*Flexbox*/
+        flex-direction: row; /*Alinha um do lado do outro*/
+        align-items: first baseline; /*Alinha em relação a primeira linha no Eixo Perpendicular*/
+        justify-content: center; /*Alinha ao Centro o Eixo Principal*/
+        gap: 48px; /*Espaçamento de 48px*/
+    }
+
+    /*CONTAINER DE TEXTO*/
+    .container-text{
+        margin-top: 48px; /*Margem do Topo de 48px*/
+    }
+
+    /*CONTAINER DE IMAGEM DA PÁGINA DE CONTATO*/
+    .container-image-contato{
+        display: flex; /*Flexbox*/
+        justify-content: center; /*Alinha o Eixo Principal ao Centro*/
+    }
+
+    /*CONTAINER DE TEXTO DA PÁGINA DE CONTATO*/
+    .container-text-contato{
+        display: flex; /*Flexbox*/
+        flex-direction: column; /*Alinha em Colunas*/
+        align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
+    }
+
+    /*IMAGEM DO CONTAINER DA PÁGINA DE CONTATO*/
+    .container-image-contato img{
+        margin: 0 0 48px 0; /*Margem Inferior de 48px e 0px nas demais*/
+        border-radius: 4px; /*Arredonda a Borda*/
+        border: 1px solid #00215e; /*Borda Azul de 1px*/
+    }
+
+    /*TEXTO IMPORTANTE DAS REDES SOCIAIS*/
+    #social-media{
+        margin: 48px 0 24px 0; /*Margem Superior de 48px e Inferior de 24px e 0px nas demais*/
+        font-size: 1.28em; /*Tamanho da Fonte de 128%*/
+    }
+
+    /*ESCONDE NO MOBILE*/
+    .hidden-mobile{
+        display: block; /*Aparece o Elemento*/
+    }
+
+    /*ESCONDE NO DESKTOP*/
+    .hidden-desktop{
+        display: none; /*Esconde o Elemento*/
+    }
+
+    /*TEXTO IMPORTANTE NA PÁGINA QUEM SOMOS*/
+    .destaque-quem-somos{
+        font-size: 1.28em; /*Tamanho da Fonte de 128%*/
+    }
+
+    /*IMAGENS DOS CARDS*/
+    .cards img{
+        width: 280px; /*Largura de 280px*/
+    }
+
+    /*TEXTOS DAS PÁGINAS - SERVIÇOS E ACESSÓRIOS*/
+    .servicos-content-text, .acessorios-content-text{
+        margin-top: 48px; /*Margem Superior de 48px*/
+        display: flex; /*Flexbox*/
+        flex-direction: column; /*Alinha em Colunas*/
+        align-items: center; /*Alinha ao Centro os Itens do Eixo Perpendicular*/
+    }
+
+    /*TEXTO DA PÁGINA DE ACESSÓRIOS*/
+    .acessorios-content-text{
+        margin: 48px 0; /*Margem Vertical de 48px e de 0px nas laterais*/
+    }
+
+    /*TEXTO IMPORTANTE DA PÁGINA SERVIÇOS*/
+    #destaque-servicos{
+        margin-top: 24px; /*Margem Superior de 24px*/
+        font-size: 1.18em; /*Tamanho da Fonte de 118%*/ 
+    }
+
+    /*TEXTO IMPORTANTE DA PÁGINA ACESSÓRIOS*/
+    #destaque-acessorios{
+        font-size: 1.18em; /*Tamanho da Fonte de 118%*/
+    }
+
+    /*TODOS OS TITULOS DAS PÁGINAS - ACESSÓRIOS | SERVIÇOS | CONTATO | LOJAS*/
+    #servicos-title, #acessorios-title, #contato-title, #lojas-title{
+        margin: 48px 0; /*Margem de 48px na Vertical e de 0px nas Laterais*/
+    }
+
+    /*ARTIGO DAS LOJAS*/
+    .lojas{
+        display: flex; /*Flexbox*/
+        flex-direction: row; /*Alinha um do lado do outro*/
+        gap: 48px; /*Espaçamento de 48px*/
+    }
+
+    /*TÍTULO DAS LOJAS*/
+    .lojas-span{
+        font-size: 1.5em; /*Tamanho da Fonte de 150%*/
+        margin-bottom: 32px; /*Margem Superior de 32px*/
+    }
+
+    /*CONTEÚDO DA PAGINA NOSSAS LOJAS*/
+    .lojas-content{
+        text-align: center; /*Alinha o Texto ao Centro*/
+    }
+
+    /*ITENS DA LISTA - SEÇÃO DO CONTEÚDO PRINCIPAL*/
+    main section ul li{
+        font-size: 1em; /*Tamanho da Fonte de 100%*/
+    }
+
+    /*RODAPÉ*/
+    footer{
+        height: 128px; /*Altura de 128px*/
+    }
+}

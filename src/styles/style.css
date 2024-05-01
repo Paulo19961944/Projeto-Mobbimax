@@ -1,0 +1,303 @@
+/*ESTILO GLOBAL*/
+*{
+    margin: 0; /*Zera a Margem*/
+    padding: 0; /*Zera o Preenchimento*/
+    box-sizing: border-box; /*Ajusta o Box Model*/
+}
+
+/*CONTEÚDO RAÍZ E DA PÁGINA*/
+html, body{
+    width: 100%; /*Largura de 100%*/
+    min-height: 100vh; /*Altura Mínima de 100% do Viewport (Tela)*/
+}
+
+/*CONTEÚDO DA PÁGINA*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F0F6; /*Cor de Fundo Branco*/
+    color: #131200;
+}
+
+/*TODAS AS IMAGENS*/
+img{
+    border-radius: 8px; /*Arredonda a Borda*/
+    width: 100%; /*Largura de 100%*/
+}
+
+/*TODOS OS TÍTULOS*/
+h1, h2, h3{
+    margin-bottom: 48px; /*Margem Inferior de 48px*/
+    text-align: center; /*Alinha o Texto ao Centro*/
+}
+
+/*TODOS OS TÍTULOS E LINKS*/
+h1, h2, h3, a, button{
+    font-family: 'Roboto Condensed', sans-serif; /*Fonte do Google - Roboto Condensed*/
+}
+
+/*TÍTULO IMPORTANTE*/
+h1{
+    margin: 96px 0 0 0; /*Margem de 96px no Topo e zera as demais*/
+    font-size: 1.5em; /*Tamanho da Fonte de 150%*/
+}
+
+/*TODOS OS PARÁGRAFOS*/
+p{
+    font-family: 'Roboto Flex', sans-serif; /*Fonte do Google - Roboto Flex*/
+    margin-bottom: 16px; /*Margem inferior de 16px*/
+}
+
+/*ULTIMA OCORRÊNCIA DO PARÁGRAFO*/
+p:last-child{
+    margin: 0; /*Zera a Margem*/
+}
+
+/*TODOS OS PARÁGRAFOS E LINKS*/
+p, a, span{
+    font-size: 0.75em; /*Tamanho da Fonte de 75%*/
+}
+
+span{
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: bold;
+    color: #00215e;
+}
+
+/*CABEÇALHO DA PÁGINA*/
+header{
+    z-index: 1;
+    background-color: #F5F0F6; /*Cor de Fundo - Branca*/
+    width: 100%; /*Largura de 100%*/
+    position: fixed; /*Posição Fixa*/
+    top: 0; /*Alinha no Topo*/
+    border-bottom: 2px solid #00215e; /*Borda Inferior de 2px Azul*/
+    padding: 32px; /*Espaçamento em todos os lados de 32px*/
+    justify-content: space-between; /*Espaçamento entre eles*/
+    align-items: center;
+    display: flex; /*Flexbox*/
+}
+
+/*LOGOTIPO DA MOBBIMAX*/
+#logo{
+    width: 104.48px; /*Largura de 104.48px*/
+    height: 32px; /*Altura de 32px*/
+}
+
+/*BOTÃO HAMBURGUER PARA ABRIR O MENU NO CELULAR*/
+#abrirMenuMobile{
+    width: 24px; /*Largura de 24px*/
+    height: 24px; /*Altura de 24px*/
+}
+
+/*CLASSE ADICIONADA PELO JAVASCRIPT*/
+#abrirMenuMobile.abrir-responsivo{
+    display: none; /*Esconde o Botão*/
+}
+
+/*BOTÃO PARA FECHAR MENU NO CELULAR*/
+#fecharMenuMobile{
+    display: none; /*Esconde o Elemento*/
+    width: 24px; /*Largura de 24px*/
+    height: 24px; /*Altura de 24px*/
+}
+
+/*CLASSE ADICIONADA PELO JAVASCRIPT*/
+#fecharMenuMobile.fechar-responsivo{
+    z-index: 2; /*Camada 2*/
+    display: inline; /*Aparece o Elemento*/
+}
+
+/*MENU DE NAVEGAÇÃO*/
+#menu{
+    display: none; /*Esconde o Menu*/
+}
+
+/*CLASSE ADICIONADA PELO JAVASCRIPT*/
+#menu.menu-responsivo{
+    background-color: #00215ef1; /*Cor de Fundo - Azul um pouco transparente*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
+    justify-content: center; /*Alinha o Eixo Principal ao Centro*/
+    gap: 48px; /*Espaçamento de 48px*/
+    width: 100vw; /*Largura de 100% do Viewport (Tela)*/
+    height: 100vh; /*Altura de 100% do Viewport (Tela)*/
+    top: 0; /*Alinha no Topo*/
+    left: 0; /*Alinha na Esquerda*/
+    position: absolute; /*Posição Absoluta*/
+}
+
+/*LISTAS DO MENU*/
+#menu li{
+    list-style: none; /*Esconde as Marcações*/
+}
+
+/*LINKS DO MENU*/
+#menu li a{
+    border-radius: 4px; /*Arredonda a borda*/
+    border: 1px solid #F5F0F6; /*Borda Branca de 1px*/
+    padding: 16px 24px; /*Preenchimento de 16px na Vertical e de 24px nas laterais*/
+    text-decoration: none; /*Retira o Sublinhado*/
+    color: #F5F0F6; /*Cor do Texto - Branca*/
+}
+
+/*CONTAINER PRINCIPAL*/
+.container{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px; /*Preenchimento de 48px em todos os lados*/
+}
+
+
+/*TODAS AS IMAGENS DO CONTEÚDO PRINCIPAL*/
+main section img{
+    box-shadow: 0.3px 0.3px 3px #13120088; /*Sombra Preta com Blur de 3px*/
+    margin: 48px 0; /*Margem Vertical de 48 px e zera a vertical*/
+}
+
+/*LISTA NÃO ORDENADAS DA SEÇÃO DO MENU PRINCIPAL*/
+main section ul{
+    margin: 0 16px; /*Zera a Margem Vertical e Margem de 16ph na Horizontal*/
+}
+
+/*PRIMEIRO ITEM DA LISTA NÃO ORDENADA DA SEÇÃO DO MENU PRINCIPAL*/
+main section ul li:first-child{
+    margin-top: 48px; /*Margem Superior de 48px*/
+}
+
+/*TODOS OS ITENS DA LISTA NÃO ORDENADA DA SEÇÃO DO MENU PRINCIPAL*/
+main section ul li{
+    font-family: 'Roboto Flex', sans-serif; /*Fonte do Google - Roboto Flex*/
+    margin-top: 16px; /*Margem Superior de 16px*/
+    font-size: 0.75em; /*Tamanho da fonte de 75%*/
+}
+
+/*ULTIMO ITEM DA LISTA NÃO ORDENADA DA SEÇÃO DO MENU PRINCIPAL*/
+main section ul li:last-child{
+    margin-bottom: 16px; /*Margem Inferior de 16px*/
+}
+
+/*ESCONDE O ELEMENTO NO MOBILE*/
+.hidden-mobile{
+    display: none; /*Esconde o Elemento*/
+}
+
+/*TODOS OS TITULOS PRINCIPAIS DA PÁGINA SERVIÇOS - ACESSÓRIOS - LOJAS*/
+#servicos-title, #acessorios-title, #lojas-title{
+    margin-bottom: 32px; /*Margem Inferior de 32px*/
+}
+
+/*CONTAINER DOS CARDS*/
+.cards-container{
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
+}
+
+/*TODOS OS CARDS*/
+.cards{
+    box-sizing: content-box; /*Box Model no modo padrão*/
+    padding: 32px 40px; /*Preenchimento Vertical de 32px e de 40px na Horizontal*/
+    margin-bottom: 32px; /*Margem Inferior de 32px*/
+    width: 100%; /*Largura de 100%*/
+    border-radius: 8px; /*Arredonda a Borda*/
+    box-shadow: 0.3px 0.3px 4px #13120065; /*Sombra do Card*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha os Itens ao Centro*/
+    list-style: none; /*Tira as marcações da lista*/
+}
+
+/*ULTIMO CARD*/
+.cards:last-child{
+    margin-bottom: 48px; /*Margem Inferior de 48px*/
+}
+
+/*TÍTULOS DOS CARDS*/
+.cards h2{
+    width: 110%; /*Largura de 110%*/
+    font-family: 'Roboto Flex', sans-serif; /*Fonte do Google - Roboto Flex*/
+    font-size: 1.28em; /*Tamanho da Fonte de 128%*/
+    margin: 0; /*Zera a Margem*/
+}
+
+/*IMAGEM DOS CARDS*/
+.cards img{
+    border-radius: 4px; /*Arredonda a Borda*/
+    margin: 32px 0; /*Margem Vertical de 32px e de 0px nas laterais*/
+}
+
+/*BOTÕES DOS CARDS*/
+.cards button{
+    border-radius: 4px; /*Arredonda a Borda*/
+    border: none; /*Tira a Borda*/
+    background-color: #00215e; /*Cor de Fundo - Azul*/
+    color: #F5F0F6; /*Cor do Texto - Branca*/
+    font-size: 0.75em; /*Tamanho da Fonte de 75%*/
+    width: 96px; /*Largura de 96px*/
+    height: 24px; /*Altura de 24px*/
+}
+
+/*ARTIGO LOJA*/
+.lojas{
+    margin: 48px 0; /*Margem de 48px na Vertical e de 0px nas Laterais*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    justify-content: start; /*Alinha o Eixo Principal*/
+}
+
+/*IMAGENS DO ARTIGO LOJA*/
+.lojas img{
+    margin: 32px 0; /*Margem Vertical de 32px e 0px nas laterais*/
+}
+
+/*TÍTULO DA LOJA*/
+.lojas-span{
+    text-align: center; /*Alinha o Texto ao Centro*/
+    font-size: 1.08em; /*Tamanho da fonte de 108%*/
+}
+
+/*PARÁGRAFOS DAS LOJAS*/
+.lojas p{
+    margin-bottom: 8px; /*Margem Inferior de 8px*/
+}
+
+/*TEXTO IMPORTANTE DAS REDES SOCIAIS*/
+#social-media{ 
+    font-size: 0.92em; /*Tamanho da Fonte de 92%*/
+}
+
+/*FACEBOOK E INSTAGRAM*/
+#facebook-mobbimax, #instagram-mobbimax{
+    font-family: 'Roboto Condensed', sans-serif; /*Fonte do Google - Roboto Condensed*/
+}
+
+/*FACEBOOK*/
+#facebook-mobbimax{
+    margin-top: 32px; /*Margem Superior de 32px*/
+}
+
+/*RODAPÉ*/
+footer{
+    height: 96px; /*Altura de 96px*/
+    display: flex; /*Flexbox*/
+    justify-content: center; /*Alinha o Eixo Principal ao Centro*/
+    align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
+    border-top: 2px solid #00215e; /*Borda Azul de 2px*/
+    width: 100%; /*Largura de 100%*/
+}
+
+/*ICONES*/
+.icons {
+    width: 27px; /*Largura de 27px*/
+    margin-left: 32px; /*Margem a Esquerda de 32px*/
+}
+
+/*ICONE DO WHATSAPP*/
+#whatsapp{
+    width: 32px; /*Largura de 32px*/
+}
