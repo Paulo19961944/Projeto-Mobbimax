@@ -248,8 +248,8 @@ main section ul li:last-child{
     background-color: #00215e; /*Cor de Fundo - Azul*/
     color: #F5F0F6; /*Cor do Texto - Branca*/
     font-size: 1em; /*Tamanho da Fonte de 75%*/
-    width: 114px;
-    height: 32px;
+    width: 114px; /*Largura de 114px*/
+    height: 32px; /*Altura de 32px*/
 }
 
 /*ARTIGO LOJA*/
@@ -258,10 +258,15 @@ main section ul li:last-child{
     display: flex; /*Flexbox*/
     flex-direction: column; /*Alinha em Colunas*/
     justify-content: start; /*Alinha o Eixo Principal*/
+    align-items: center;
 }
 
 /*IMAGENS DO ARTIGO LOJA*/
 .lojas img{
+    object-fit: cover; /*Coloca a Imagem cobrindo toda a tela, sem perder qualidade*/
+    object-position: center center; /*Alinha a imagem ao centro*/
+    width: 300px; /*Largura de 300px*/
+    height: 240px; /*Altura de 240px*/
     margin: 32px 0; /*Margem Vertical de 32px e 0px nas laterais*/
 }
 

@@ -16,6 +16,12 @@
         max-width: 375px; /*Largura Máxima de 375px*/
     }
 
+    /*IMAGENS DA PÁGINA NOSSAS LOJAS*/
+    .lojas img{ 
+        width: 375px; /*Largura de 375px*/
+        height: 320px; /*Altura de 320px*/
+    }
+
 }
 
 /*TABLETS*/
@@ -44,6 +50,12 @@
     .cards button{
         width: 120px; /*Largura de 120px*/
         height: 32px; /*Altura de 32px*/
+    }
+
+    /*IMAGENS DA PÁGINA NOSSAS LOJAS*/
+    .lojas img{
+        width: 480px; /*Largura de 480px*/
+        height: 375px; /*Altura de 375px*/
     }
 
 }
@@ -200,6 +212,12 @@
         width: 280px; /*Largura de 280px*/
     }
 
+    /*IMAGENS DA PÁGINA NOSSAS LOJAS*/
+    .lojas img{
+        width: 420px; /*Largura de 420px*/
+        height: 320px; /*Altura de 420px*/
+    }
+
     /*TEXTOS DAS PÁGINAS - SERVIÇOS E ACESSÓRIOS*/
     .servicos-content-text, .acessorios-content-text{
         margin-top: 48px; /*Margem Superior de 48px*/
@@ -233,6 +251,8 @@
     .lojas{
         display: flex; /*Flexbox*/
         flex-direction: row; /*Alinha um do lado do outro*/
+        align-items: start;
+        justify-content: center;
         gap: 48px; /*Espaçamento de 48px*/
     }
 
