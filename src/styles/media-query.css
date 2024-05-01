@@ -10,9 +10,10 @@
         padding: 48px 96px; /*Preenchimento de 48px na vertical e de 96px nas laterais*/
     }
 
+    /*CARDS*/
     .cards{
-        width: 80vw;
-        max-width: 375px;
+        width: 80vw; /*Largura de 80% do Viewport (Tela)*/
+        max-width: 375px; /*Largura Máxima de 375px*/
     }
 
 }
@@ -29,8 +30,9 @@
         font-size: 1em; /*Tamanho da fonte de 100%*/
     }
 
+    /*CARDS*/
     .cards{
-        max-width: 480px;
+        max-width: 480px; /*Largura Máxima de 480px*/
     }
 
     /*TÍTULO DOS CARDS*/
@@ -48,13 +50,15 @@
 
 /*DESKTOPS*/
 @media (min-width: 1024px){
-    header{
-        height: 120px;
-    }
     /*CABEÇALHO*/
+    header{
+        height: 120px; /*Largura de 120px*/
+    }
+
+    /*CONTAINER DO CABEÇALHO*/
     .header-container{
-        padding: 32px;
-        max-width: 1200px;
+        padding: 32px; /*Preenchimento de 32px em todos os lados*/
+        max-width: 1200px; /*Largura Máxima de 1200px*/
     }
 
     /*LOGOTIPO*/
@@ -73,6 +77,16 @@
         display: flex; /*Flexbox*/
     }
 
+    /*MENU COM CLASSE ADICIONADA NO JAVASCRIPT*/
+    #menu.menu-responsivo{
+        background-color: transparent; /*Cor de Fundo - Transparente*/
+        width: 100%; /*Largura de 100%*/
+        height: 100%; /*Altura de 100%*/
+        flex-direction: row; /*Alinha um do lado do outro*/
+        gap: 0; /*Zera o Espaçamento*/
+        position: static; /*Posição Estática*/
+    }
+
     /*LINKS DO MENU DE NAVEGAÇÃO*/
     #menu li a{
         padding: 0; /*Zera o Preenchimento*/
@@ -86,6 +100,11 @@
         color: #00215e; /*Cor do Texto Azul*/
         font-weight: bold; /*Fonte em Negrito*/
         transform: scale(1.03); /*Aumento o Tamanho em 3%*/
+    }
+
+    /*CLASSE DO MENU FECHAR ADICIONADA NO JAVASCRIPT*/
+    #fecharMenuMobile.fechar-responsivo{
+        display: none; /*Esconde o Elemento*/
     }
 
     /*CONTAINER PRINCIPAL*/
@@ -107,8 +126,8 @@
 
     /*CARDS*/
     .cards{
-        padding: 0;
-        width: 480px;
+        padding: 0; /*Zera o Preenchimento*/
+        width: 480px; /*Largura de 480px*/
         height: 420px; /*Altura Fixa de 375px*/
     }
 
@@ -129,7 +148,6 @@
         justify-content: center; /*Alinha ao Centro o Eixo Principal*/
         gap: 48px; /*Espaçamento de 48px*/
     }
-
 
     /*CONTAINER DE TEXTO*/
     .container-text{

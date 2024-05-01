@@ -13,12 +13,12 @@ html, body{
 
 /*CONTEÚDO DA PÁGINA*/
 body{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative; /*Posição Relativa*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
     background-color: #F5F0F6; /*Cor de Fundo Branco*/
-    color: #131200;
+    color: #131200; /*Cor do Texto - Preto*/
 }
 
 /*TODAS AS IMAGENS*/
@@ -61,17 +61,17 @@ p, a, span{
 }
 
 span{
-    font-family: 'Roboto Flex', sans-serif;
-    font-weight: bold;
-    color: #00215e;
+    font-family: 'Roboto Flex', sans-serif; /*Fonte do Google - Roboto Flex*/
+    font-weight: bold; /*Fonte em Negrito*/
+    color: #00215e; /*Cor dos Links - Azul*/
 }
 
 /*CABEÇALHO DA PÁGINA*/
 header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
+    display: flex; /*Flexbox*/
+    justify-content: center; /*Alinha o Eixo Principal ao Centro*/
+    align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
+    z-index: 1; /*Posição 1 da Camada*/
     background-color: #F5F0F6; /*Cor de Fundo - Branca*/
     width: 100%; /*Largura de 100%*/
     position: fixed; /*Posição Fixa*/
@@ -80,11 +80,11 @@ header{
     padding: 32px; /*Espaçamento em todos os lados de 32px*/
 }
 
+/*CONTAINER DO HEADER*/
 .header-container{
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
+    width: 100%; /*Largura de 100%*/
+    display: flex; /*Flexbox*/
+    justify-content: space-between; /*Distribui os espaços iguais, sem colocar um espaçamento nas laterais*/
 }
 
 /*LOGOTIPO DA MOBBIMAX*/
@@ -153,16 +153,17 @@ header{
 
 /*CONTAINER PRINCIPAL*/
 .container{
-    width: 100vw;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100vw; /*Largura de 100% do Viewport*/
+    max-width: 1200px; /*Largura Máxima de 1200px*/
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
     padding: 48px; /*Preenchimento de 48px em todos os lados*/
 }
 
+/*TEXTOS DOS CONTAINERS DA PÁGINA SERVIÇOS E ACESSÓRIOS*/
 .servicos-container p, .servicos-container span, .acessorios-container p, .acessorios-container span{
-    margin: 16px 32px;
+    margin: 16px 32px; /*Margem de 16px na Vertical e de 32px nas Laterais*/
 }
 
 /*TODAS AS IMAGENS DO CONTEÚDO PRINCIPAL*/
@@ -222,11 +223,6 @@ main section ul li:last-child{
     list-style: none; /*Tira as marcações da lista*/
 }
 
-/*ULTIMO CARD*/
-.cards:last-child{
-    margin-bottom: 48px; /*Margem Inferior de 48px*/
-}
-
 /*TÍTULOS DOS CARDS*/
 .cards h2{
     width: 100%; /*Largura de 110%*/
@@ -237,11 +233,11 @@ main section ul li:last-child{
 
 /*IMAGEM DOS CARDS*/
 .cards img{
-    width: 220px;
-    height: 200px;
-    margin: 32px;
-    object-fit: cover;
-    object-position: center center;
+    width: 220px; /*Largura de 220px*/
+    height: 200px; /*Altura de 200px*/
+    margin: 32px; /*Margem em todos os lados de 32px*/
+    object-fit: cover; /*Coloca a Imagem cobrindo toda a tela, sem perder qualidade*/
+    object-position: center center; /*Alinha a imagem ao centro*/
     border-radius: 4px; /*Arredonda a Borda*/
 }
 
@@ -299,8 +295,8 @@ main section ul li:last-child{
 /*RODAPÉ*/
 footer{
     background-color: #F5F0F6;
-    position: absolute;
-    bottom: -96px;
+    position: absolute; /*Posição Absoluta ao Body*/
+    bottom: -96px; /*Coloca o elemento no topo inferior com uma margem de 96px*/
     height: 96px; /*Altura de 96px*/
     display: flex; /*Flexbox*/
     justify-content: center; /*Alinha o Eixo Principal ao Centro*/
