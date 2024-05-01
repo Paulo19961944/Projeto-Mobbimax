@@ -10,10 +10,11 @@
         padding: 48px 96px; /*Preenchimento de 48px na vertical e de 96px nas laterais*/
     }
 
-    /*CARDS*/
     .cards{
-        max-width: 348px; /*Largura Máxima de 348px*/
+        width: 80vw;
+        max-width: 375px;
     }
+
 }
 
 /*TABLETS*/
@@ -26,7 +27,11 @@
     /*OUTROS ELEMENTOS DE TEXTO*/
     p, a, span, .cards button{
         font-size: 1em; /*Tamanho da fonte de 100%*/
-    }   
+    }
+
+    .cards{
+        max-width: 480px;
+    }
 
     /*TÍTULO DOS CARDS*/
     .cards h2{
@@ -98,8 +103,9 @@
 
     /*CARDS*/
     .cards{
-        padding: 40px 64px; /*Preenchimento de 40px na Vertical e de 64px nas laterais*/
-        height: 375px; /*Altura Fixa de 375px*/
+        padding: 0;
+        width: 480px;
+        height: 420px; /*Altura Fixa de 375px*/
     }
 
     /*CARDS AO PASSAR O MOUSE*/
@@ -119,6 +125,7 @@
         justify-content: center; /*Alinha ao Centro o Eixo Principal*/
         gap: 48px; /*Espaçamento de 48px*/
     }
+
 
     /*CONTAINER DE TEXTO*/
     .container-text{

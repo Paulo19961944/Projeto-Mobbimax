@@ -146,6 +146,7 @@ header{
 
 /*CONTAINER PRINCIPAL*/
 .container{
+    width: 100vw;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
@@ -153,6 +154,9 @@ header{
     padding: 48px; /*Preenchimento de 48px em todos os lados*/
 }
 
+.servicos-container p, .servicos-container span, .acessorios-container p, .acessorios-container span{
+    margin: 16px 32px;
+}
 
 /*TODAS AS IMAGENS DO CONTEÚDO PRINCIPAL*/
 main section img{
@@ -201,10 +205,8 @@ main section ul li:last-child{
 
 /*TODOS OS CARDS*/
 .cards{
-    box-sizing: content-box; /*Box Model no modo padrão*/
-    padding: 32px 40px; /*Preenchimento Vertical de 32px e de 40px na Horizontal*/
+    padding: 0 24px;
     margin-bottom: 32px; /*Margem Inferior de 32px*/
-    width: 100%; /*Largura de 100%*/
     border-radius: 8px; /*Arredonda a Borda*/
     box-shadow: 0.3px 0.3px 4px #13120065; /*Sombra do Card*/
     display: flex; /*Flexbox*/
@@ -220,16 +222,20 @@ main section ul li:last-child{
 
 /*TÍTULOS DOS CARDS*/
 .cards h2{
-    width: 110%; /*Largura de 110%*/
+    width: 100%; /*Largura de 110%*/
     font-family: 'Roboto Flex', sans-serif; /*Fonte do Google - Roboto Flex*/
     font-size: 1.28em; /*Tamanho da Fonte de 128%*/
-    margin: 0; /*Zera a Margem*/
+    margin: 48px 0 0 0; /*Zera a Margem*/
 }
 
 /*IMAGEM DOS CARDS*/
 .cards img{
+    width: 220px;
+    height: 200px;
+    margin: 32px;
+    object-fit: cover;
+    object-position: center center;
     border-radius: 4px; /*Arredonda a Borda*/
-    margin: 32px 0; /*Margem Vertical de 32px e de 0px nas laterais*/
 }
 
 /*BOTÕES DOS CARDS*/
@@ -241,6 +247,7 @@ main section ul li:last-child{
     font-size: 0.75em; /*Tamanho da Fonte de 75%*/
     width: 96px; /*Largura de 96px*/
     height: 24px; /*Altura de 24px*/
+    margin-bottom: 48px;
 }
 
 /*ARTIGO LOJA*/
