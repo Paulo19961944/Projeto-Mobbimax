@@ -166,6 +166,18 @@ header{
     margin: 16px 32px; /*Margem de 16px na Vertical e de 32px nas Laterais*/
 }
 
+/*CONTAINER DE TEXTO DA PÁGINA DE SERVIÇOS*/
+.servicos-content-text{
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/ 
+    align-items: center; /*Alinha o Eixo Perpendicular ao centro*/
+}
+
+/*TEXTO IMPORTANTE DA PÁGINA DE SERVIÇOS - SPAN*/
+#destaque-servicos{
+    margin: 24px 0 0 0; /*Margem no topo de 24px e zera as demais*/
+}
+
 /*TODAS AS IMAGENS DO CONTEÚDO PRINCIPAL*/
 main section img{
     box-shadow: 0.3px 0.3px 3px #13120088; /*Sombra Preta com Blur de 3px*/
@@ -197,6 +209,13 @@ main section ul li:last-child{
 /*ESCONDE O ELEMENTO NO MOBILE*/
 .hidden-mobile{
     display: none; /*Esconde o Elemento*/
+}
+
+/*TEXTO IMPORTANTE DA PÁGINA ACESSÓRIOS - SPAN*/
+.acessorios-content-text{
+    display: flex; /*Flexbox*/
+    justify-content: center; /*Alinha o Eixo Principal ao Centro*/
+    width: 300px; /*Largura de 300px*/
 }
 
 /*TODOS OS TITULOS PRINCIPAIS DA PÁGINA SERVIÇOS - ACESSÓRIOS - LOJAS*/

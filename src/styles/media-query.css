@@ -16,6 +16,11 @@
         max-width: 375px; /*Largura Máxima de 375px*/
     }
 
+    /*TEXTO IMPORTANTE DA PÁGINA ACESSÓRIOS - SPAN*/
+    .acessorios-content-text{
+        width: 100%; /*Largura de 100%*/
+    }
+
     /*IMAGENS DA PÁGINA NOSSAS LOJAS*/
     .lojas img{ 
         width: 375px; /*Largura de 375px*/
