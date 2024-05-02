@@ -60,6 +60,7 @@ p, a, span{
     font-size: 0.75em; /*Tamanho da Fonte de 75%*/
 }
 
+/*TEXTOS IMPORTANTES NA PÁGINA*/
 span{
     font-family: 'Roboto Flex', sans-serif; /*Fonte do Google - Roboto Flex*/
     font-weight: bold; /*Fonte em Negrito*/
@@ -91,6 +92,11 @@ header{
 #logo{
     width: 104.48px; /*Largura de 104.48px*/
     height: 32px; /*Altura de 32px*/
+}
+
+/*BOTÕES DE ABRIR E FECHAR MENU NO MOBILE*/
+#abrirMenuMobile, #fecharMenuMobile{
+    cursor: pointer; /*Cursor de mãozinha*/
 }
 
 /*BOTÃO HAMBURGUER PARA ABRIR O MENU NO CELULAR*/
@@ -265,10 +271,14 @@ main section ul li:last-child{
     border-radius: 4px; /*Arredonda a Borda*/
     border: none; /*Tira a Borda*/
     background-color: #00215e; /*Cor de Fundo - Azul*/
-    color: #F5F0F6; /*Cor do Texto - Branca*/
-    font-size: 1em; /*Tamanho da Fonte de 75%*/
     width: 114px; /*Largura de 114px*/
     height: 32px; /*Altura de 32px*/
+}
+
+.cards button a{
+    color: #F5F0F6; /*Cor do Texto - Branca*/
+    font-size: 1em; /*Tamanho da Fonte de 75%*/
+    text-decoration: none; /*Remove a Decoração do Texto*/
 }
 
 /*ARTIGO LOJA*/

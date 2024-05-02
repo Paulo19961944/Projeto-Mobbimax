@@ -217,6 +217,13 @@
         width: 280px; /*Largura de 280px*/
     }
 
+    /*BOTÕES DOS CARDS*/
+    .cards button:hover{
+        cursor: pointer; /*Mãozinha ao Passar o Mouse*/
+        transform: scale(1.04); /*Aumenta o botão em 4%*/
+        transition: 0.8s ease-in-out; /*Transição suave de 0.5s*/
+    }
+
     /*IMAGENS DA PÁGINA NOSSAS LOJAS*/
     .lojas img{
         width: 420px; /*Largura de 420px*/
